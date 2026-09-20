@@ -17,6 +17,14 @@ A lightweight, zero-dependency Python snapshot backup tool for Linux servers, ho
 python3 backup_task.py --source /path/to/data --destination /backups
 ```
 
+```text
+$ python3 backup_task.py --source /opt/configs --destination /backups --verbose
+[2026-09-20 03:00:01] Archiving /opt/configs -> /backups/backup_configs_20260920_030001.tar.gz
+[2026-09-20 03:00:04] Archive created: 18.4 MB (SHA256: e3b0c44298fc1c149afbf4c8...)
+[2026-09-20 03:00:04] Enforcing retention policy: 7 days retention, 10 archives max
+[2026-09-20 03:00:04] Backup cycle completed successfully.
+```
+
 ### Multiple Directories with 14-day Retention
 ```bash
 python3 backup_task.py \
