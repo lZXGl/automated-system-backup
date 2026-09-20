@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+backups/
+*.tar.gz
+*.tar.bz2
+*.tar
+venv/
+.venv/
